@@ -19,13 +19,12 @@ function request(json, url){
         url: url,
         data: {},
         success: function(data){
-           alert(data.foo);
            json = data;
            console.log(json);
         },
         error: function(){
-           alert('Something went wrong!');
            json = undefined;
+           console.log("Something went wrong!");
         }
     });
 }
