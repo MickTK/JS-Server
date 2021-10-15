@@ -16,7 +16,7 @@ $(document).ready(function(){
 function request(){
     $.ajax({
         type: 'GET',
-        dataType: 'application/json',
+        dataType: 'json',
         url: 'https://micktk.github.io/JS-Server/Database/db.json',
         data: {},
         success: function(data){
