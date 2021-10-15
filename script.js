@@ -18,11 +18,12 @@ function request(){
         type: 'POST',
         dataType: 'application/json',
         url: 'https://raw.githubusercontent.com/MickTK/JS-Server/main/Database/db.json',
+        data: {},
         success: function(data){
            alert(data.foo);
         },
         error: function(){
-           alert('request failed');
+           alert('Something went wrong!');
         }
       });
 }
