@@ -10,4 +10,19 @@ $(document).ready(function(){
     $("#test1").text(urlParams.get('test1'));
     $("#test2").text(urlParams.get('test2'));
 
+    request();
 });
+
+function request(){
+    $.ajax({
+        type: 'GET',
+        dataType: 'application/json',
+        url: 'https://raw.githubusercontent.com/MickTK/JS-Server/main/Database/db.json',
+        success: function(data){
+           alert(data.foo);
+        },
+        error: function(){
+           alert('request failed');
+        }
+      });
+}
