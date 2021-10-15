@@ -1,5 +1,6 @@
 /* Get URL Parameters */
 const urlParams = new URLSearchParams(window.location.search);
+var json;
 
 $(document).ready(function(){
 
@@ -10,20 +11,22 @@ $(document).ready(function(){
     $("#test1").text(urlParams.get('test1'));
     $("#test2").text(urlParams.get('test2'));
 
-    request();
+    json = request('https://micktk.github.io/JS-Server/Database/db.json');
 });
 
-function request(){
+function request(json){
     $.ajax({
         type: 'GET',
         dataType: 'json',
-        url: 'https://micktk.github.io/JS-Server/Database/db.json',
+        url: json,
         data: {},
         success: function(data){
            alert(data.foo);
+           return data;
         },
         error: function(){
            alert('Something went wrong!');
+           return undefined;
         }
       });
 }

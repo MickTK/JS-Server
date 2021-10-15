@@ -1,5 +1,5 @@
 {
-    "foo": "foo",
+    "foo": "JSON loaded correctly",
     "goo": 4567.8,
     "fruits": [
         "banana",
