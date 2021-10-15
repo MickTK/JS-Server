@@ -1,0 +1,11 @@
+* {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    margin-top: 50px;
+    font-size: 30px;
+}
