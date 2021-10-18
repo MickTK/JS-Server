@@ -3,15 +3,27 @@
     <head>
         <title>JS Server</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
-        <div>
-            <h3>Params:</h3>
-            <p id="test1"></p>
-            <p id="test2"></p>
-        </div>
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <input type="text" placeholder="name"/>
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address"/>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input id="username" type="text" placeholder="username"/>
+                <input id="password" type="password" placeholder="password"/>
+                <button id="login">login</button>
+                <p class="message">Form made by <a target="_blank" href="https://codepen.io/colorlib">Aigars Silkalns</a> :)</p>
+              </form>
+            </div>
+          </div>
         
-        <script src="script.js"></script>
+        <script src="login.js"></script>
     </body>
 </html>
