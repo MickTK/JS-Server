@@ -3,6 +3,7 @@ $(document).ready(function(){
         type: 'GET',
         dataType: 'json',
         url: 'https://micktk.github.io/JS-Server/Database/db.json',
+        asynch: false,
         data: {},
         success: function(data){
            if(data.username == getParam('user') && data.password == getParam('pass'))
