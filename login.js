@@ -1,5 +1,3 @@
-var json;
-
 $(document).ready(function(){
     $("#login").click(function(event){
         event.preventDefault();
@@ -10,7 +8,7 @@ $(document).ready(function(){
             data: {},
             success: function(data){
                if(data.username == $("#username").val() && data.password == $("#password").val())
-                location.href = 'https://micktk.github.io/JS-Server/post.html?' + 'user=' + $("#username").val() + '&' + 'pass=' + $("#password").val();
+                location.href = 'https://micktk.github.io/JS-Server/post?' + 'user=' + $("#username").val() + '&' + 'pass=' + $("#password").val();
                else
                 alert("Username or password incorrect!");
             },
@@ -20,7 +18,3 @@ $(document).ready(function(){
         });
     });
 });
-
-function getParam(param){
-    return new URLSearchParams(window.location.search).get(param);
-}
