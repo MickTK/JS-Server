@@ -7,7 +7,7 @@ $(document).ready(function(){
         data: {},
         success: function(data){
            if(data.username == getParam('user') && data.password == getParam('pass'))
-            $('p').text(data.content[0] + ' ' + data.content[1]);
+            $('h2').text(data.content[0] + ' ' + data.content[1]);
            else{
             alert("Username or password incorrect!");
             location.href = 'https://micktk.github.io/JS-Server/index'
