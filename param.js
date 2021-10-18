@@ -10,12 +10,12 @@ $(document).ready(function(){
             $('p').text(data.content[0] + ' ' + data.content[1]);
            else{
             alert("Username or password incorrect!");
-            location.href = 'https://micktk.github.io/JS-Server/login'
+            location.href = 'https://micktk.github.io/JS-Server/index'
            }
         },
         error: function(){
            alert("Something went wrong!");
-           location.href = 'https://micktk.github.io/JS-Server/login'
+           location.href = 'https://micktk.github.io/JS-Server/index'
         }
     });
 });
