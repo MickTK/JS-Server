@@ -1,0 +1,12 @@
+{
+    "foo": "JSON loaded correctly",
+    "goo": 4567.8,
+    "fruits": [
+        "banana",
+        "apple",
+        "orange"
+    ],
+    "nest": {
+        "lorem": "lorem"
+    }
+}

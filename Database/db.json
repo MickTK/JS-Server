@@ -1,12 +1,5 @@
 {
-    "foo": "JSON loaded correctly",
-    "goo": 4567.8,
-    "fruits": [
-        "banana",
-        "apple",
-        "orange"
-    ],
-    "nest": {
-        "lorem": "lorem"
-    }
+    "username": "Carletto", 
+    "password": "12345", 
+    "content": ["Hello", "World!"]
 }
